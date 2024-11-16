@@ -5,9 +5,14 @@
   box-sizing: border-box;
 
   -webkit-tap-highlight-color: transparent;
+
   user-select: none;
 }
 
+h1, p, h2, h3, h4, h5, h6 {
+  white-space: pre-wrap;
+}
+
 body {
-  touch-action: pan-y
+  touch-action: none;
 }
