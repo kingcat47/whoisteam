@@ -14,8 +14,12 @@ export default defineConfig({
 				enabled: true,
 			},
 			manifest: {
-				theme_color: '#000000',
+				name: 'Mixir',
+				theme_color: '#fff',
 				display: 'standalone',
+				background_color: '#fff',
+				orientation: 'portrait',
+				scope: '/',
 				icons: [
 					{
 						src: '/icon-192.png',
