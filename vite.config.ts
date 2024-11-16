@@ -15,6 +15,7 @@ export default defineConfig({
 			},
 			manifest: {
 				theme_color: '#000000',
+				display: 'standalone',
 				icons: [
 					{
 						src: '/icon-192.png',

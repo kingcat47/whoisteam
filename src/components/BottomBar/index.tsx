@@ -11,8 +11,8 @@ function BottomBar() {
 	return (
 		<>
 			<div className={ styles.container }>
-				<BottomBarItem path={ 'teamBuilding' } icon={ <AddIcon /> } filledIcon={ <AddFilledIcon /> } />
-				<BottomBarItem path={ 'studentManage' } icon={ <GroupIcon /> } filledIcon={ <GroupFilledIcon /> } />
+				<BottomBarItem path={ 'teamBuilding' } icon={ <GroupIcon /> } filledIcon={ <GroupFilledIcon /> } />
+				<BottomBarItem path={ 'studentManage' } icon={ <AddIcon /> } filledIcon={ <AddFilledIcon /> } />
 				<BottomBarItem path={ 'matchTable' } icon={ <SwordsIcon /> } filledIcon={ <SwordsFilledIcon /> } />
 			</div>
 		</>
