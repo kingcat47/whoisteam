@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2871FF;
+
+  width: fit-content;
+
+  border-radius: 8px;
+
+  padding-inline: 14px;
+  padding-block: 12px;
+
+  position: absolute;
+
+  transition: background-color 0.1s ease-in-out;
+
+  &:active {
+    background-color: #1E5BD7;
+  }
+}

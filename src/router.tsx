@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
+import { TeamBuilding } from './pages';
 
 const router = createBrowserRouter([
 	{
@@ -8,7 +9,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: 'teamBuilding',
-				element: <h1>테스트</h1>,
+				element: <TeamBuilding />,
 			},
 			{
 				path: 'studentManage',
