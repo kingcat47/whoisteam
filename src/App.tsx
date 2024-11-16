@@ -1,12 +1,21 @@
-import "./App.css";
-import Navigation from "./Bottom/Navigation";
+import { BottomBar } from './components';
+import { Outlet, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import styles from './App.module.scss';
+
 function App() {
-  return (
-    <>
-      <h1>안녕하세요 나는 좌호빈~</h1>
-      <Navigation></Navigation>
-    </>
-  );
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		navigate('/teamBuilding');
+	}, []);
+
+	return (
+		<div className={ styles.container }>
+			<Outlet />
+			<BottomBar />
+		</div>
+	);
 }
 
 export default App;
