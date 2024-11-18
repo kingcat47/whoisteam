@@ -3,6 +3,7 @@ import App from "./App.tsx";
 import { TeamBuilding } from "./pages";
 import Input from "./components/InputButton/index.tsx";
 import StudentManage from "./pages/StudentManage/index.tsx";
+import MachTable from "./pages/MachTable/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "matchTable",
-        element: <h1>대진표</h1>,
+        element: <MachTable />,
       },
       //   {
       //     path: "",
