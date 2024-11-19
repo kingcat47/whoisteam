@@ -7,6 +7,7 @@ export default function Login() {
   return (
     <>
       <div className={styles.container}>
+        <div className={styles.space}></div>
         <SvgIcon icon={<LogoIcon />} color={"#2871FF"}></SvgIcon>
         <h1 className={styles.title}>팀 관리를{"\n"}Mixir앱 하나로</h1>
       </div>

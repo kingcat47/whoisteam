@@ -7,7 +7,7 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
   // useEffect(() => {
-  //   navigate("/teamBuilding");
+  //   로그인이 되어있는가 navigate("/teamBuilding"); else navigate("/login");
   // }, []);
   const loginpage = location.pathname != "/login";
   return (
