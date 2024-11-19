@@ -7,7 +7,10 @@ interface InputProps {
   placeholder?: string;
 }
 
-const InputItem = styled.input`
+const InputItem = styled.input.attrs({
+  type: "search",
+  enterKeyHint: "search",
+})`
   color: #000;
   font-family: "Pretendard Variable";
   font-size: 14px;
@@ -22,13 +25,19 @@ const InputItem = styled.input`
 
 function Input({ placeholder, className }: InputProps) {
   const [textvalue, setTextvalue] = useState("");
-
+  const handleSubmit = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      // 키보드 내리기
+      (document.activeElement as HTMLElement)?.blur();
+    }
+  };
   return (
     <div className={[styles.container, className].join(" ")}>
       <InputItem
         value={textvalue}
         onChange={(e) => setTextvalue(e.target.value)}
         placeholder={placeholder}
+        onKeyDown={handleSubmit}
       />
     </div>
   );
