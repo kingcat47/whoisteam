@@ -4,6 +4,7 @@ import { Login, TeamBuilding } from "./pages";
 import StudentManage from "./pages/StudentManage/index.tsx";
 import MachTable from "./pages/MachTable/index.tsx";
 import ListItem from "./components/ListItem/index.tsx";
+import TeambuildingFirst from "./pages/TeambuildingFirst/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         element: <TeamBuilding />,
       },
       {
+        path: "teambuildingfirst",
+        element: <TeambuildingFirst />,
+      },
+      {
         path: "studentManage",
         element: <StudentManage />,
       },
@@ -24,24 +29,6 @@ const router = createBrowserRouter([
         path: "matchTable",
         element: <MachTable />,
       },
-      //   {
-      //     path: "",
-      //     element: <MenuLayout></MenuLayout>,
-      //     children: [
-      //       {
-      //         path: "",
-      //         element: <TodayWord />,
-      //       },
-      //       {
-      //         path: "voca",
-      //         element: <Voca />,
-      //       },
-      //       {
-      //         path: "more",
-      //         element: <More />,
-      //       },
-      //     ],
-      //   },
     ],
   },
 ]);

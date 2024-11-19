@@ -1,23 +1,35 @@
-import PlusIcon from '../../assets/icon/plus.svg?react';
-import { Button } from '../../components';
-import styles from './styles.module.scss';
+import { useNavigate } from "react-router-dom";
+import PlusIcon from "../../assets/icon/plus.svg?react";
+import { Button } from "../../components";
+import styles from "./styles.module.scss";
 
 export default function TeamBuilding() {
-	const list = [];
+  const list = [];
+  const navigate = useNavigate();
 
-	return (
-		<div className={ styles.container }>
-			<h1 className={ styles.title }>현재 만들어진{ '\n' }전체 팀빌딩 목록이에요</h1>
+  const handclick = () => {
+    navigate("/teambuildingfirst");
+  };
 
-			<div className={ styles.main }>
-				{
-					list.length == 0 && (
-						<p className={ styles.empty }>아직 만들어진 팀빌딩이 없어요!{ '\n' }지금 바로 만들어보세요!</p>
-					)
-				}
-			</div>
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        현재 만들어진{"\n"}전체 팀빌딩 목록이에요
+      </h1>
 
-			<Button icon={ <PlusIcon /> } className={ styles.button } />
-		</div>
-	);
+      <div className={styles.main}>
+        {list.length == 0 && (
+          <p className={styles.empty}>
+            아직 만들어진 팀빌딩이 없어요!{"\n"}지금 바로 만들어보세요!
+          </p>
+        )}
+      </div>
+
+      <Button
+        icon={<PlusIcon />}
+        className={styles.button}
+        onClick={handclick}
+      />
+    </div>
+  );
 }
