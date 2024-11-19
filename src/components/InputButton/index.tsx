@@ -9,7 +9,7 @@ interface InputProps {
 
 const InputItem = styled.input.attrs({
   type: "search",
-  enterKeyHint: "search",
+  enterKeyHint: "search", //같이있길래 넣기 했는데 역할은 잘 모르겠음
 })`
   color: #000;
   font-family: "Pretendard Variable";

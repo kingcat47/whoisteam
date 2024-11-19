@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  padding: 16px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: calc(100% - 40px);
+}
+
+.title {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+}
+
+.text {
+  color: #989898;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  align-items: center; /* 세로 배치 */
+  justify-content: space-between;
+}
+
+.left {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.supperjjangjjangman {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
