@@ -5,6 +5,7 @@ import StudentManage from "./pages/StudentManage/index.tsx";
 import MachTable from "./pages/MachTable/index.tsx";
 import ListItem from "./components/ListItem/index.tsx";
 import TeambuildingFirst from "./pages/TeambuildingFirst/index.tsx";
+import TeambuildingSecond from "./pages/TeambuildingSecond/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "teambuildingfirst",
         element: <TeambuildingFirst />,
+      },
+      {
+        path: "teambuildingsecond",
+        element: <TeambuildingSecond />,
       },
       {
         path: "studentManage",
