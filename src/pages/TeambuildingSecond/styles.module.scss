@@ -11,6 +11,7 @@
   font-weight: 600;
   line-height: 140%; /* 22.4px */
 }
+
 .container {
   width: 100%;
   height: calc(100% - 66px);
@@ -23,4 +24,10 @@
 
   padding-inline: 24px;
   padding-top: 56px;
+
+  .title {
+    font-family: "Pretendard-Bold", sans-serif;
+    line-height: 140%;
+    font-size: 24px;
+  }
 }

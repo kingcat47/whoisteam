@@ -3,7 +3,7 @@ import React from "react";
 import SvgIcon from "../SvgIcon";
 
 interface ButtonProps {
-  icon: React.ReactElement; //이거는 왜 :?안됌?
+  icon: React.ReactElement; //이거는 왜 ?:안됌?
   text?: string;
   onClick?: () => void;
   className?: string;

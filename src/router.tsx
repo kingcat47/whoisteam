@@ -6,24 +6,26 @@ import MachTable from "./pages/MachTable/index.tsx";
 import ListItem from "./components/ListItem/index.tsx";
 import TeambuildingFirst from "./pages/TeambuildingFirst/index.tsx";
 import TeambuildingSecond from "./pages/TeambuildingSecond/index.tsx";
+import Card from "./components/Card/index.tsx";
+import MachTableFirst from "./pages/MachTableFirst/index.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "test", element: <ListItem></ListItem> },
+      { path: "test", element: <MachTableFirst></MachTableFirst> },
       { path: "login", element: <Login /> },
       {
         path: "teamBuilding",
         element: <TeamBuilding />,
       },
       {
-        path: "teambuildingfirst",
+        path: "teambuilding/1",
         element: <TeambuildingFirst />,
       },
       {
-        path: "teambuildingsecond",
+        path: "teambuilding/2",
         element: <TeambuildingSecond />,
       },
       {

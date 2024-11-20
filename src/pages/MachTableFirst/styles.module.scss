@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  height: calc(100% - 66px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  position: relative;
+
+  padding-inline: 24px;
+  padding-top: 56px;
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 70%;
+  }
+
+  .card {
+    transition: background-color 0.2s ease;
+
+    &.active {
+      background-color: #e3edff;
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 36px;
+    right: 24px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+}
