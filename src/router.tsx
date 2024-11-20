@@ -7,13 +7,14 @@ import TeambuildingFirst from "./pages/TeambuildingFirst/index.tsx";
 import TeambuildingSecond from "./pages/TeambuildingSecond/index.tsx";
 import MachTableFirst from "./pages/MachTableFirst/index.tsx";
 import MachTableSecond from "./pages/MachTableSecond/index.tsx";
+import NameTag from "./components/NameTag/index.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "test", element: <MachTableSecond /> },
+      { path: "test", element: <NameTag name={"권지원"}></NameTag> },
       { path: "login", element: <Login /> },
       {
         path: "teamBuilding",
