@@ -3,18 +3,17 @@ import App from "./App.tsx";
 import { Login, TeamBuilding } from "./pages";
 import StudentManage from "./pages/StudentManage/index.tsx";
 import MachTable from "./pages/MachTable/index.tsx";
-import ListItem from "./components/ListItem/index.tsx";
 import TeambuildingFirst from "./pages/TeambuildingFirst/index.tsx";
 import TeambuildingSecond from "./pages/TeambuildingSecond/index.tsx";
-import Card from "./components/Card/index.tsx";
 import MachTableFirst from "./pages/MachTableFirst/index.tsx";
+import MachTableSecond from "./pages/MachTableSecond/index.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "test", element: <MachTableFirst></MachTableFirst> },
+      { path: "test", element: <MachTableSecond /> },
       { path: "login", element: <Login /> },
       {
         path: "teamBuilding",
@@ -35,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: "matchTable",
         element: <MachTable />,
+      },
+      { path: "matchTable1", element: <MachTableFirst /> },
+      {
+        path: "matchTable2",
+        element: <MachTableSecond />,
       },
     ],
   },

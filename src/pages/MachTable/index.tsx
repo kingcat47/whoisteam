@@ -2,10 +2,14 @@ import PlusIcon from "../../assets/icon/plus.svg?react";
 import { Button } from "../../components";
 import styles from "./styles.module.scss";
 import Input from "../../components/InputButton";
+import { useNavigate } from "react-router-dom";
 
 export default function MachTable() {
   const list = [];
-
+  const navigation = useNavigate();
+  const handclick = () => {
+    navigation("/matchTable1");
+  };
   return (
     <div className={styles.container}>
       <Input placeholder={"검색어를 입력해주세요"}></Input>
@@ -19,7 +23,11 @@ export default function MachTable() {
         )}
       </div>
 
-      <Button icon={<PlusIcon />} className={styles.button} />
+      <Button
+        icon={<PlusIcon />}
+        className={styles.button}
+        onClick={handclick}
+      />
     </div>
   );
 }

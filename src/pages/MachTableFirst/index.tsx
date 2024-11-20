@@ -22,7 +22,7 @@ export default function MachTableFirst() {
   };
 
   const handclick = () => {
-    navigate("/machtable2");
+    navigate("/matchTable2");
   };
 
   return (
