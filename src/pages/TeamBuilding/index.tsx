@@ -8,7 +8,7 @@ export default function TeamBuilding() {
   const navigate = useNavigate();
 
   const handclick = () => {
-    navigate("/teambuilding/1");
+    navigate("/teamBuilding/1");
   };
 
   return (

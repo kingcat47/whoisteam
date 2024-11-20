@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function TeambuildingFirst() {
   const navigate = useNavigate();
   const handclick = () => {
-    navigate("/teambuilding/2");
+    navigate("/teamBuilding/2");
   };
   return (
     <>

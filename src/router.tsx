@@ -21,11 +21,11 @@ const router = createBrowserRouter([
         element: <TeamBuilding />,
       },
       {
-        path: "teambuilding/1",
+        path: "teamBuilding/1",
         element: <TeambuildingFirst />,
       },
       {
-        path: "teambuilding/2",
+        path: "teamBuilding/2",
         element: <TeambuildingSecond />,
       },
       {
