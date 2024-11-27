@@ -25,8 +25,8 @@
 		"noUncheckedSideEffectImports": true,
 		"types": [
 			"vite-plugin-svgr/client",
-			"vite-plugin-pwa/client",
-			"vite-plugin-pwa/react"
+			"vite-plugin-pwa/client"
+			//			"vite-plugin-pwa/react"
 		]
 	},
 	"include": [

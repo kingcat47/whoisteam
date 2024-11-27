@@ -5,6 +5,12 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
+	publicDir: 'public',
+	resolve: {
+		alias: {
+			'@': '/src',
+		},
+	},
 	plugins: [
 		react(),
 		svgr(),
