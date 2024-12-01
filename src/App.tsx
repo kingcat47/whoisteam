@@ -3,17 +3,33 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 // import { useEffect } from "react";
 import styles from './App.module.scss';
 import { useEffect } from 'react';
+import Cookies from 'js-cookie';
+import useFileStore from './stores/fileStore.ts';
+import { getFiles } from './api/files.ts';
 
 function App() {
 	const navigate = useNavigate();
 	const location = useLocation();
-	// useEffect(() => {
-	//   로그인이 되어있는가 navigate("/teamBuilding"); else navigate("/login");
-	// }, []);
 	const loginpage = location.pathname != '/login';
 
+	const { setIsLoading, setFiles } = useFileStore((state) => state);
+
 	useEffect(() => {
-		navigate('/login');
+		const accessToken = Cookies.get('accessToken');
+
+		if (accessToken) {
+			setIsLoading(true);
+
+			getFiles()
+				.then((response) => {
+					setFiles(response);
+					setIsLoading(false);
+				});
+
+
+		} else {
+			navigate('/login');
+		}
 	}, []);
 
 	return (

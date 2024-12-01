@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+
+  .item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 42px;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+
+    border-radius: 8px;
+
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  }
+}

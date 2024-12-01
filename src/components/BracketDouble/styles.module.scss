@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+
+  width: 100%;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .lineContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+    .leftLine {
+      flex-grow: 1;
+      height: 50px;
+      border-bottom: 1px solid #000;
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+    }
+
+    .line {
+      flex-grow: 2;
+      height: 1px;
+      background-color: #000;
+    }
+
+    .rightLine {
+      flex-grow: 1;
+      height: 50px;
+      border-bottom: 1px solid #000;
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+  }
+}

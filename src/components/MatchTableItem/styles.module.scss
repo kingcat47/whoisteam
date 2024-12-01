@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-inline: 12px;
+  padding-block: 16px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  .title {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .rightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+
+    .type {
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 140%;
+      color: #989898;
+    }
+  }
+}

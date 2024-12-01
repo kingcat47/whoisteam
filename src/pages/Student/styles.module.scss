@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  height: calc(100% - 66px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  position: relative;
+
+  padding-inline: 24px;
+  padding-top: 12px;
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .title {
+      font-family: "Pretendard-Bold", sans-serif;
+      line-height: 140%;
+      font-size: 24px;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    overflow-y: scroll;
+  }
+
+  .editButton {
+    position: absolute;
+
+    bottom: 36px;
+    left: 24px;
+  }
+
+  .bracketButton {
+    position: absolute;
+
+    bottom: 36px;
+    left: 108px;
+  }
+
+  .button {
+    position: absolute;
+
+    bottom: 36px;
+    right: 24px;
+  }
+}

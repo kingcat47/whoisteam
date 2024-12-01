@@ -17,6 +17,14 @@
     font-size: 24px;
   }
 
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    overflow-y: scroll;
+  }
+
   .button {
     position: absolute;
 

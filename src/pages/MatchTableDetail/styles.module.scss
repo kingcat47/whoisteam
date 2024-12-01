@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: calc(100% - 66px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  position: relative;
+
+  padding-inline: 24px;
+  padding-top: 56px;
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .title {
+      font-family: "Pretendard-Bold", sans-serif;
+      line-height: 140%;
+      font-size: 24px;
+    }
+  }
+
+  .main {
+    width: 80%;
+
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-inline: 12px;
+  padding-block: 16px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  .studentInfo {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: baseline;
+
+    .studentName {
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    .number {
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 140%;
+      color: #989898;
+
+
+    }
+  }
+
+  .rightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+
+    .level {
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 140%;
+    }
+  }
+}

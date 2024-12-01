@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+  }
+}

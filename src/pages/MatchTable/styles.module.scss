@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: calc(100% - 66px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  position: relative;
+
+  padding-inline: 24px;
+  padding-top: 56px;
+
+  .title {
+    font-family: "Pretendard-Bold", sans-serif;
+    line-height: 140%;
+    font-size: 24px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    overflow-y: scroll;
+  }
+
+  .button {
+    position: absolute;
+
+    bottom: 36px;
+    right: 24px;
+  }
+}

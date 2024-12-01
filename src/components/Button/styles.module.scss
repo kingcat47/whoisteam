@@ -2,19 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: #2871FF;
+  gap: 10px;
 
   width: fit-content;
 
   border-radius: 8px;
 
-  padding-inline: 14px;
-  padding-block: 12px;
+  padding-inline: 16px;
+  padding-block: 14px;
 
   position: absolute;
 
   transition: background-color 0.1s ease-in-out;
+
+  p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+  }
 
   &:active {
     background-color: #1E5BD7;
