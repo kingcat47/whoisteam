@@ -8,12 +8,18 @@
   justify-content: center;
   align-items: flex-start;
 
+  .label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
   input {
     width: 100%;
     
     border-radius: 10px;
     background-color: #F6F6F6;
-    padding: 12px 17px;
+    padding: 17px 20px;
     outline: none;
     border: none;
 
@@ -29,7 +35,7 @@
       font-family: sans-serif;
       font-size: 16px;
       line-height: 22px;
-      color: #8c8c8c;
+      color: #707070;
     }
   }
 }
