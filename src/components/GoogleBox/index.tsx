@@ -33,7 +33,7 @@ function GoogleBox({ className }: GoogleBoxProp) {
 	return (
 		<div className={ [ styles.container, className ].join(' ') } onClick={ handleLogin }>
 			<SvgIcon color={ 'none' } icon={ <GoogleIcon /> } width={ 28 } height={ 28 } />
-			<div className={ styles.text }>Google로 시작하기</div>
+			<div className={ styles.text }>눌러서 Google로 시작하기</div>
 		</div>
 	);
 }

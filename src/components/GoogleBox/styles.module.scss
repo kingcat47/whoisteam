@@ -1,14 +1,21 @@
 .container {
   display: flex;
-  width: 343px;
-  height: 50px;
+  width: calc(100% - 48px);
+  max-width: 500px;
+
+  height: 54px;
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  border-radius: 8px;
-  border: 1px solid var(--Grays-Black, #000);
-  background: #fff;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--Grays-Black, #e1e1e1);
+  box-shadow: 1px 5px 10px #f1f1f1;
+  background-color: #fff;
+
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
 
   &:active {
     background-color: #ebebeb;
@@ -24,7 +31,7 @@
   color: #000;
   text-align: center;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 22.4px */
