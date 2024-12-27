@@ -11,7 +11,7 @@ export default function TeamBuilding() {
 
 	const { files, isLoading } = useFileStore((state) => state);
 
-	const handclick = () => {
+	const handleClick = () => {
 		navigate('/teamBuilding/1');
 	};
 
@@ -53,7 +53,7 @@ export default function TeamBuilding() {
 			<Button
 				icon={ <PlusIcon /> }
 				className={ styles.button }
-				onClick={ handclick }
+				onClick={ handleClick }
 			/>
 		</div>
 	);
